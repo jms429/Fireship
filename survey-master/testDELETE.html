@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-gap: 1em;
+      }
+
+      .wrapper2 {
+        padding-top: 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        /* sets column height to stop overflow  */
+        grid-auto-rows: minmax(200px, auto);
+      }
+      .wrapper > div,
+      .wrapper2 > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-of-type(odd),
+      .wrapper2 > div:nth-of-type(odd) {
+        background: #ddd;
+      }
+
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: 70px;
+      }
+      .nested > div {
+        border: #333 1px solid;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        tempore doloribus nulla, dolore placeat architecto eaque at quam fugit
+        suscipit vero sunt rem nihil magni fugiat temporibus dicta impedit
+        natus. Deserunt unde eos obcaecati dolor ipsam voluptatum soluta alias
+        perspiciatis laborum, ea amet, eius, numquam dolores quibusdam maxime
+        cupiditate assumenda dolorum distinctio hic nemo similique modi ullam!
+        Perferendis officiis culpa facere non assumenda ratione quia id tempora.
+        Laboriosam, non neque aliquid et incidunt quidem recusandae explicabo
+        obcaecati similique tenetur sit.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore
+        reprehenderit veritatis rerum sit quo ipsum soluta, cupiditate placeat
+        in magni mollitia beatae nobis, labore dolores, iusto aspernatur eius
+        minus!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        tempore doloribus nulla, dolore placeat architecto eaque at quam fugit
+        suscipit vero sunt rem nihil magni fugiat temporibus dicta impedit
+        natus. Deserunt unde eos obcaecati dolor ipsam voluptatum soluta alias
+        perspiciatis laborum, ea amet, eius, numquam dolores quibusdam maxime
+        cupiditate assumenda dolorum distinctio hic nemo similique modi ullam!
+        Perferendis officiis culpa facere non assumenda ratione quia id tempora.
+        Laboriosam, non neque aliquid et incidunt quidem recusandae explicabo
+        obcaecati similique tenetur sit.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolore
+        reprehenderit veritatis rerum sit quo ipsum soluta, cupiditate placeat
+        in magni mollitia beatae nobis, labore dolores, iusto aspernatur eius
+        minus!
+      </div>
+      <div>hello</div>
+    </div>
+    <div class="wrapper2">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div class="nested">
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+      </div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Vitae magnam voluptates debitis
+        vel est, assumenda accusantium corporis aperiam temporibus velit rerum
+        nostrum quia perferendis ea!
+      </div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    </div>
+  </body>
+</html>
