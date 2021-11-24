@@ -44,10 +44,11 @@ function submitForm(e) {
     var q6 = getRadioVal('Q6');
     var is_patient = getInputVal('is_patient');
     var first_visit = getRadioVal('first_visit');
-  
+    var sm = document.getElementById('survey-main');
+    var cp = document.getElementById('complete');
 
     //save message
-    saveMessages(date, time, first, last,email, phone, message, q1, q2, q3, q4, q5, q6, is_patient, first_visit);
+    saveMessages(date, time, first, last,email, phone, message, q1, q2, q3, q4, q5, q6, is_patient, first_visit, sm);
 
     console.log(date);
     console.log(time);
@@ -65,6 +66,8 @@ function submitForm(e) {
     console.log( "Other than the patient if filling out this form.  "+ is_patient);
     console.log( "First visit.  "+ first_visit);
 
+    sm.classList.add("hidden");
+    cp.classList.remove("hidden");
 
 }
 
@@ -111,6 +114,5 @@ function saveMessages(date, time, first, last,email, phone, message, q1, q2, q3,
         is_patient: is_patient,
         first_visit: first_visit
     });
-
 
 }

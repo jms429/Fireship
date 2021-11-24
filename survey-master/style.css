@@ -44,10 +44,19 @@ ul {
   background: #c9e6ff;
 }
 
+.instructions p {
+  width: 100%;
+  padding: 1em;
+}
+
 .company-info h3,
 .company-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+#survey-main{
+  background: #f9feff;
 }
 
 .contact,
@@ -99,10 +108,23 @@ form textarea {
   text-transform: uppercase;
 }
 
+#complete{
+  background: #f9feff;
+}
+
+.hidden{
+  display: none;
+}
+
+#complete h2{
+  text-align: center;
+}
+
+
 .grid-survey-question {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  grid-gap: 10px;
+ grid-gap: 10px;
 }
 .grid-question,
 .grid-comment {

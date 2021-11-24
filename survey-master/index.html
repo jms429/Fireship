@@ -19,228 +19,231 @@
                         <li>test@DCA.test</li>
                     </ul>
                 </div>
-                <div class="background">
-                    <h3>Background questions</h3>
-                    <form id="background">
-                        <p>
-                            <input type="checkbox" id="is_patient">
-                            <label>If someone other than the patient if filling
-                                out
-                                this form, please check here.</label>
-                        </p>
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Was this your first
-                                visit?</label>
-                            <label for="first_visit">Yes<input
-                                    type="radio"
-                                    name="first_visit" value="Yes"></label>
-                            <label for="first_visit">No<input
-                                    type="radio"
-                                    name="first_visit" value="No"></label>
-                        </p>
-                        <p>
-                            How many <span class="bold">minutes</span> did you
-                            wait
-                            after your scheduled appointment time before you
-                            were
-                            called to an exam room?
-                        </p>
-                        <p>
-                            <input type="number" min="0" max="360" name="minutes_exam_room">
-                            <label>Minutes</label>
-                        </p>
-                        <p>
-                            How many <span class="bold">minutes</span> did you
-                            wait
-                            in the exam room before you were seen by a doctor,
-                            physician assistant(PA), nurse practitioner(NP), or
-                            midwife?
-                        </p>
-                        <p>
-                            <input type="number" min="0" max="360" name="minutes_exam_room">
-                            <label>Minutes</label>
-                        </p>
-                    </form>
+                <div id="survey-main">
+                    <div class="background">
+                        <h3>Background questions</h3>
+                        <form id="background">
+                            <p>
+                                <input type="checkbox" id="is_patient">
+                                <label>If someone other than the patient if filling
+                                    out
+                                    this form, please check here.</label>
+                            </p>
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Was this your first
+                                    visit?</label>
+                                <label for="first_visit">Yes<input
+                                        type="radio"
+                                        name="first_visit" value="Yes"></label>
+                                <label for="first_visit">No<input
+                                        type="radio"
+                                        name="first_visit" value="No"></label>
+                            </p>
+                            <p>
+                                How many <span class="bold">minutes</span> did you
+                                wait
+                                after your scheduled appointment time before you
+                                were
+                                called to an exam room?
+                            </p>
+                            <p>
+                                <input type="number" min="0" max="360" name="minutes_exam_room">
+                                <label>Minutes</label>
+                            </p>
+                            <p>
+                                How many <span class="bold">minutes</span> did you
+                                wait
+                                in the exam room before you were seen by a doctor,
+                                physician assistant(PA), nurse practitioner(NP), or
+                                midwife?
+                            </p>
+                            <p>
+                                <input type="number" min="0" max="360" name="minutes_exam_room">
+                                <label>Minutes</label>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="instructions">
+                        <p>Please rate the services you recieved from our practice.
+                            <span class="bold">Select the response</span> that
+                            best describes your experience. If the question does not
+                            apply to you, please skip to the next question. Space is
+                            provided for you to comment on good or bad things that
+                            may have happend to you.</p>
+                    </div>
+                    <div class="access">
+                        <h3>Access</h3>
+                        <form id="access">
+                            <p class="grid-survey-question">
+                                <label name="ease_of_access" id="q1" class="grid-question">Ease of getting through
+                                    to the clinic phone.</label>
+                                <label for="ease_of_access">Bad<input
+                                        type="radio"
+                                        name="Q1" value="Bad"></label>
+                                <label for="ease_of_access">Poor<input
+                                        type="radio"
+                                        name="Q1" value="Poor"></label>
+                                <label for="ease_of_access">Fair<input
+                                        type="radio"
+                                        name="Q1" value="Fair"></label>
+                                <label for="ease_of_access">Good<input
+                                        type="radio"
+                                        name="Q1" value="Good"></label>
+                                <label for="ease_of_access">Great<input
+                                        type="radio"
+                                        name="Q1" value="Great"></label>
+                            </p>
+                            <p class="grid-survey-question">
+                                <label name= "convience_of_hours" class="grid-question">Convenience of our
+                                    office hours.</label>
+                                <label for="convience_of_hours">Bad<input
+                                        type="radio"
+                                        name="Q2" value="Bad"></label>
+                                <label for="convience_of_hours">Poor<input
+                                        type="radio"
+                                        name="Q2" value="Poor"></label>
+                                <label for="convience_of_hours">Fair<input
+                                        type="radio"
+                                        name="Q2" value="Fair"></label>
+                                <label for="convience_of_hours">Good<input
+                                        type="radio"
+                                        name="Q2" value="Good"></label>
+                                <label for="convience_of_hours">Great<input
+                                        type="radio"
+                                        name="Q2" value="Great"></label>
+                            </p>
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Ease of Scheduling your
+                                    appointment.</label>
+                                <label for="">Bad<input
+                                        type="radio"
+                                        name="Q3" value="Bad"></label>
+                                <label for="">Poor<input
+                                        type="radio"
+                                        name="Q3" value="Poor"></label>
+                                <label for="">Fair<input
+                                        type="radio"
+                                        name="Q3" value="Fair"></label>
+                                <label for="">Good<input
+                                        type="radio"
+                                        name="Q3" value="Good"></label>
+                                <label for="">Great<input
+                                        type="radio"
+                                        name="Q3" value="Great"></label>
+                            </p>
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Courtesy of staff in
+                                    the registration area.</label>
+                                <label for="">Bad<input
+                                        type="radio"
+                                        name="Q4" value="Bad"></label>
+                                <label for="">Poor<input
+                                        type="radio"
+                                        name="Q4" value="Poor"></label>
+                                <label for="">Fair<input
+                                        type="radio"
+                                        name="Q4" value="Fair"></label>
+                                <label for="">Good<input
+                                        type="radio"
+                                        name="Q4" value="Good"></label>
+                                <label for="">Great<input
+                                        type="radio"
+                                        name="Q4" value="Great"></label>
+                            </p>
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Additional comments</label>
+                                <textarea class="grid-comment" rows="5"></textarea>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="moving_through_visit">
+                        <h3>Moving through your visit.</h3>
+                        <form action="">
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Degree to which you
+                                    were informed about delays.</label>
+                                <label for="">Bad<input
+                                        type="radio"
+                                        name="Q5" value="Bad"></label>
+                                <label for="">Poor<input
+                                        type="radio"
+                                        name="Q5" value="Poor"></label>
+                                <label for="">Fair<input
+                                        type="radio"
+                                        name="Q5" value="Fair"></label>
+                                <label for="">Good<input
+                                        type="radio"
+                                        name="Q5" value="Good"></label>
+                                <label for="">Great<input
+                                        type="radio"
+                                        name="Q5" value="Great"></label>
+                            </p>
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Wait time at
+                                    clinic(from arriving to leaving).</label>
+                                <label for="">Bad<input
+                                        type="radio"
+                                        name="Q6" value="Bad"></label>
+                                <label for="">Poor<input
+                                        type="radio"
+                                        name="Q6" value="Poor"></label>
+                                <label for="">Fair<input
+                                        type="radio"
+                                        name="Q6" value="Fair"></label>
+                                <label for="">Good<input
+                                        type="radio"
+                                        name="Q6" value="Good"></label>
+                                <label for="">Great<input
+                                        type="radio"
+                                        name="Q6" value="Great"></label>
+                            </p>
+    
+                            <p class="grid-survey-question">
+                                <label class="grid-question">Additional comments</label>
+                                <textarea class="grid-comment" rows="5"></textarea>
+                            </p>
+                        </form>
+                    </div>
+                    <!-- LAST SECTION  -->
+                    <div class="contact">
+                        <h3>Contact info</h3>
+                        <form id="contactForm" action="">
+                            <p>
+                                <label>Date of visit</label>
+                                <input type="date" id="date"/>
+                            </p>
+                            <p>
+                                <label>Time of Visit</label>
+                                <input type="time" id="time" />
+                            </p>
+                            <p>
+                                <label>First</label>
+                                <input type="text" id="first">
+                            </p>
+                            <p>
+                                <label>Last</label>
+                                <input type="text" id="last">
+                            </p>
+                            <p>
+                                <label>Email</label>
+                                <input type="email" id="email">
+                            </p>
+                            <p>
+                                <label>Phone</label>
+                                <input type="tel" id="phone">
+                            </p>
+    
+                            <p class="full">
+                                <label>Message</label>
+                                <textarea id="message" rows="5"></textarea>
+                            </p>
+                            <p class="full">
+                                <button id="submitButton" type="submit">Submit</button>
+                            </p>
+                        </form>
+                    </div>
                 </div>
-                <div class="instructions">
-                    <p>Please rate the services you recieved from our practice.
-                        <span class="bold">Select the response</span> that
-                        best describes your experience. If the question does not
-                        apply to you, please skip to the next question. Space is
-                        provided for you to comment on good or bad things that
-                        may have happend to you.</p>
-                </div>
-                <div class="access">
-                    <h3>Access</h3>
-                    <form id="access">
-                        <p class="grid-survey-question">
-                            <label name="ease_of_access" id="q1" class="grid-question">Ease of getting through
-                                to the clinic phone.</label>
-                            <label for="ease_of_access">Bad<input
-                                    type="radio"
-                                    name="Q1" value="Bad"></label>
-                            <label for="ease_of_access">Poor<input
-                                    type="radio"
-                                    name="Q1" value="Poor"></label>
-                            <label for="ease_of_access">Fair<input
-                                    type="radio"
-                                    name="Q1" value="Fair"></label>
-                            <label for="ease_of_access">Good<input
-                                    type="radio"
-                                    name="Q1" value="Good"></label>
-                            <label for="ease_of_access">Great<input
-                                    type="radio"
-                                    name="Q1" value="Great"></label>
-                        </p>
-                        <p class="grid-survey-question">
-                            <label name= "convience_of_hours" class="grid-question">Convenience of our
-                                office hours.</label>
-                            <label for="convience_of_hours">Bad<input
-                                    type="radio"
-                                    name="Q2" value="Bad"></label>
-                            <label for="convience_of_hours">Poor<input
-                                    type="radio"
-                                    name="Q2" value="Poor"></label>
-                            <label for="convience_of_hours">Fair<input
-                                    type="radio"
-                                    name="Q2" value="Fair"></label>
-                            <label for="convience_of_hours">Good<input
-                                    type="radio"
-                                    name="Q2" value="Good"></label>
-                            <label for="convience_of_hours">Great<input
-                                    type="radio"
-                                    name="Q2" value="Great"></label>
-                        </p>
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Ease of Scheduling your
-                                appointment.</label>
-                            <label for="">Bad<input
-                                    type="radio"
-                                    name="Q3" value="Bad"></label>
-                            <label for="">Poor<input
-                                    type="radio"
-                                    name="Q3" value="Poor"></label>
-                            <label for="">Fair<input
-                                    type="radio"
-                                    name="Q3" value="Fair"></label>
-                            <label for="">Good<input
-                                    type="radio"
-                                    name="Q3" value="Good"></label>
-                            <label for="">Great<input
-                                    type="radio"
-                                    name="Q3" value="Great"></label>
-                        </p>
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Courtesy of staff in
-                                the registration area.</label>
-                            <label for="">Bad<input
-                                    type="radio"
-                                    name="Q4" value="Bad"></label>
-                            <label for="">Poor<input
-                                    type="radio"
-                                    name="Q4" value="Poor"></label>
-                            <label for="">Fair<input
-                                    type="radio"
-                                    name="Q4" value="Fair"></label>
-                            <label for="">Good<input
-                                    type="radio"
-                                    name="Q4" value="Good"></label>
-                            <label for="">Great<input
-                                    type="radio"
-                                    name="Q4" value="Great"></label>
-                        </p>
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Additional comments</label>
-                            <textarea class="grid-comment" rows="5"></textarea>
-                        </p>
-                    </form>
-                </div>
-                <div class="moving_through_visit">
-                    <h3>Moving through your visit.</h3>
-                    <form action="">
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Degree to which you
-                                were informed about delays.</label>
-                            <label for="">Bad<input
-                                    type="radio"
-                                    name="Q5" value="Bad"></label>
-                            <label for="">Poor<input
-                                    type="radio"
-                                    name="Q5" value="Poor"></label>
-                            <label for="">Fair<input
-                                    type="radio"
-                                    name="Q5" value="Fair"></label>
-                            <label for="">Good<input
-                                    type="radio"
-                                    name="Q5" value="Good"></label>
-                            <label for="">Great<input
-                                    type="radio"
-                                    name="Q5" value="Great"></label>
-                        </p>
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Wait time at
-                                clinic(from arriving to leaving).</label>
-                            <label for="">Bad<input
-                                    type="radio"
-                                    name="Q6" value="Bad"></label>
-                            <label for="">Poor<input
-                                    type="radio"
-                                    name="Q6" value="Poor"></label>
-                            <label for="">Fair<input
-                                    type="radio"
-                                    name="Q6" value="Fair"></label>
-                            <label for="">Good<input
-                                    type="radio"
-                                    name="Q6" value="Good"></label>
-                            <label for="">Great<input
-                                    type="radio"
-                                    name="Q6" value="Great"></label>
-                        </p>
-
-                        <p class="grid-survey-question">
-                            <label class="grid-question">Additional comments</label>
-                            <textarea class="grid-comment" rows="5"></textarea>
-                        </p>
-                    </form>
-                </div>
-                <!-- LAST SECTION  -->
-                <div class="contact">
-                    <h3>Contact info</h3>
-                    <form id="contactForm" action="">
-                        <p>
-                            <label>Date of visit</label>
-                            <input type="date" id="date"/>
-                        </p>
-                        <p>
-                            <label>Time of Visit</label>
-                            <input type="time" id="time" />
-                        </p>
-                        <p>
-                            <label>First</label>
-                            <input type="text" id="first">
-                        </p>
-                        <p>
-                            <label>Last</label>
-                            <input type="text" id="last">
-                        </p>
-                        <p>
-                            <label>Email</label>
-                            <input type="email" id="email">
-                        </p>
-                        <p>
-                            <label>Phone</label>
-                            <input type="tel" id="phone">
-                        </p>
-
-                        <p class="full">
-                            <label>Message</label>
-                            <textarea id="message" rows="5"></textarea>
-                        </p>
-                        <p class="full">
-                            <button type="submit">Submit</button>
-                        </p>
-                    </form>
-                </div>
+                <div id="complete" class="hidden"><h2>Thank you for completing this survey!</h2></div>
             </div>
         </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
